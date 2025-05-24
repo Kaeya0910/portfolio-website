@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+    </body>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Portfolio</title>
+</head>
+
+
+
+<body>
+
+  <div class="container">
+    <header></header>
+  </div>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">JJN
+    </div>
+
+    <div class="right">
+      <a id="ig"
+       href="https://www.instagram.com/kaitokid_____/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+      
+      <a id="fb"
+       href="https://www.facebook.com/james.riosnavasca" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-facebook-f"></i>        
+        <span>Facebook</span>
+      </a>
+      
+      <a href="jamesjosephnono@example.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div> 
+  </nav>
+
+  <main>
+    <!-- SECTION 1: About -->
+    <section class="hero-section">
+      <div class="text">   
+        <h2>Hi, <span class="auto-type"></span> </h2>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <script>
+          var typed = new Typed(".auto-type",{
+            strings : ["I'm James Joseph R. Nono", "I'm a Student", "I'm a Programmer", "I'm at STI Alabang"],
+            typeSpeed : 150,
+            backSpeed : 150,
+            loop : true
+          })
+        </script>
+
+        
+        <p>"Hello! My name is James Joseph Nono. I made this website portfolio for my final project exam. It shows what I’ve learned as a student, like my skills in coding and web design. I’m still learning and improving, and this project is a big step for me to achieve my dreams. Thank you for taking the time to visit my website!"</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-brain"></i>
+            <span>Skills</span>
+          </a>
+
+          <a href="#achievement">
+            <i class="fa-solid fa-medal"></i>
+            <span>Achievement</span>
+          </a>
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="sanaguamanahaha.jpg" alt="james joseph headshot">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+
+      <div class="cells">
+        <div class="cell">
+          <i class="fa-brands fa-html5"></i>
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <i class="fa-brands fa-css3-alt"></i>
+          <span>CSS</span>
+        </div>
+        
+        <div class="cell">
+          <i class="fa-brands fa-java"></i>
+          <span>Java</span>
+        </div>
+
+        <div class="text">
+          "I know that my skills are not yet enough, but I’m doing my best to improve. Right now, I’m still learning Java, and I use IntelliJ as my coding tool. I also study using W3Schools to help me understand coding better. I believe that with more practice and learning, I will become more confident and ready for future opportunities."
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Achievement -->
+    <section id="achievement" class="achievement-section">
+      <h2>Achievement</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="backback.jpg">
+          <p>James Joseph Nono</p>
+          <p>STI Alabang.</p>
+          <p>"Hello I'm James Joseph Nono and I'm creating this website portfolio for my final project exam"</p>
+        </div>
+
+        <div class="achieve">
+          <div class="achieve">
+          <img src="NC2.png" alt="NC2 Certificate" class="certificate-img" />
+          </div>
+        
+        </div>
+      </div>
+    </section>
+
+<!-- SECTION 4: Contact -->
+<section id="contact" class="contact-section">
+  <h2>Contact</h2>
+  <div class="group">
+    <div class="text">
+      <p>Have a question? Send us a message and we'll reply soon!</p>
+    </div>
+
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" />
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="6"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+  <footer>
+    <p>© James Joseph Nono - 2025</p>
+    <div class="socials">
+      <a href="#"><i class="https://www.facebook.com/james.riosnavasca"></i></a>
+      <a href="#"><i class="https://www.instagram.com/kaitokid_____/"></i></a>
+      <a href="mailto:jamesjosephnono@email.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  </main>
+</body>
+</html>
