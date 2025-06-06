@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+  --text-color: #1a1c20;
+  --link-color: #9259ee;
+  --background-color: #eeeff1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: 1400px;
+  margin: 0 auto; 
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 50px;
+  height: 80px;
+}
+
+nav .left a {
+  color: var(--link-color);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+nav .right a {
+  color: var(--text-color);
+  margin: 0 10px;
+}
+
+nav .right a:last-child {
+  color: var(--background-color);
+  background-color: var(--link-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+nav .right a span {
+  margin-left: 5px;
+}
+
+#ig:hover, #fb:hover{
+   color:#9259ee;
+    transition: color 0.3 ease;
+}
+
+/* SECTION 1: About */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  margin-bottom: 100px;
+  gap: 40px;
+}
+
+.hero-section .text {
+  flex: 5;
+
+}
+
+.hero-section .text p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.hero-section .text h2 {
+  font-size: 50px;
+}
+
+.hero-section h2 span {
+  color:#9259ee
+}
+
+
+.hero-section .text .links {
+  margin-top: 25px;
+}
+
+.hero-section .text .links a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: .1s;
+}
+
+hero-section .text .links a:hover {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9259ee;
+}
+
+.hero-section .headshot {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.hero-section .headshot img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+/* SECTION 2: Skills */
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  margin: 3rem 0;
+}
+.skills{
+  background-color: var(--background-color);
+  color: #9259ee;
+  margin-bottom: 200px;
+}
+.skills h2{
+  color: var(--text-color);
+}
+
+.skills-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.skill-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#9259ee;
+  height: 600px;
+  border-radius: 3rem;
+  cursor: pointer;
+  border: 5px solid transparent;
+  transition: 0.4s ease-in-out;
+}
+
+.skill-box:hover{
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 5px solid var(--link-color);
+}
+.skill-info{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+.skill-info i{
+  font-size: 4rem;
+  margin: 2rem 0;
+  font-weight: 800;
+}
+
+.skill-info p{
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+
+
+/* SECTION 3: Achievement */
+/* .achievement-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.achievement-section h2 {
+  box-align: center;
+  font-size: 35px;
+}
+
+.achievement-section h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.achievement-section .group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.achievement-section .group .person-details {
+  text-align: center;
+  flex: 2;
+}
+
+.achievement-section .group .person-details img {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+img {
+  clip-path: circle(50%);
+}
+
+.achievement-section .group .person-details p {
+  font-weight: 600;
+}
+
+.achievement-section .group .person-details p:last-child {
+  font-weight: normal;
+}
+
+.achievement-section .group .achieve {
+  flex: 8;
+}
+
+.certificate-img {
+  width: 300px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+} */
+
+
+/* SECTION 3: Achievements */
+.achievement-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  padding: 4rem 5%;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--text-color);
+}
+
+.achievement-detail {
+  display: none;
+}
+
+.achievement-detail.active {
+  display: block;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.achievement-box .numb {
+  font-size: 8rem;
+  -webkit-text-stroke: 2px var(--text-color);
+  color: transparent;
+  margin-bottom: 2rem;
+}
+
+.achievement-box h3 {
+  font-size: 3rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.achievement-box p {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.image-box .achievement-carousel {
+  width: 100%;
+  height: 50rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: var(--background-color);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.img-slide {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  height: 100%;
+  gap: 2rem;
+  transition: transform 0.5s ease;
+}
+
+.img-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 2rem;
+  height: auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.img-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 2rem;
+}
+
+/* Navigation */
+.navigation {
+  text-align: right;
+  margin-top: 2rem;
+}
+
+.navigation button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1rem;
+  background-color: var(--background-color);
+  border: 2px solid var(--background-color);
+  border-radius: 1rem;
+  font-size: 2rem;
+  color:#9259ee;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navigation button:hover {
+  background-color: #1e1e1e;
+}
+
+.navigation button.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.arrow-right {
+  margin-left: 1rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .achievement-container {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement-box {
+    text-align: center;
+  }
+
+  .img-item img {
+    height: auto;
+  }
+}
+
+
+/* .portfolio-box .live-github a {
+  position: relative;
+  display: inline-flex;
+  padding: 1.3rem;
+  font-size: 3rem;
+  color: var(--background-color);
+  border-radius: 50%;
+  background-color: var(--text-color);
+} */
+
+/* .portfolio-box .live-github a:first-child {
+  margin-right: 1.5rem;
+}
+
+.portfolio-box .live-github a:first-child {
+  transform: rotate(135deg);
+}
+
+.portfolio-box .live-github a span {
+  position: absolute;
+  top: -60%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.6rem;
+  white-space: nowrap;
+  padding: .5rem 1rem;
+  border-radius: .6rem;
+  pointer-events: none;
+  background-color: var(--background-color);
+  color: var(--text-color);
+} */
+
+
+/* SECTION 4: Contact */
+.contact .title::after {
+  color: #9259ee;
+  display: block;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+
+.contact .contact-content .left .text {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.contact .contact-content .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact .contact-content .row i {
+  font-size: 25px;
+  color: #9259ee;
+  min-width: 40px;
+}
+
+.contact .contact-content .info {
+  margin-left: 15px;
+}
+
+.contact .contact-content .info .head {
+  font-weight: 600;
+}
+
+.contact .contact-content .info .sub-title {
+  color: #555;
+}
+
+.contact .right form .fields {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.contact .right form .field,
+.contact .right form .textarea {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.contact .right form .textarea textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact .right form .button {
+  margin-top: 10px;
+}
+
+.contact .right form .button button {
+  background-color: #9259ee;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact .right form .button button:hover {
+  background-color:#9259ee;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #111;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.title .subtitle {
+  display: block;
+  font-size: 16px;
+  color: #a259ff;
+  margin-top: 5px;
+  position: relative;
+}
+
+.title .subtitle::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #a259ff;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+
+
+@media (max-width: 850px) {
+  /* SECTION 1: Hero */
+  .hero-section .text h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 740px) {
+  /* SECTION 1: Hero */
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section .headshot img {
+    width: 300px;
+  }
+
+  /* SECTION 2: Achievement */
+  .achievement-section {
+    text-align: center;
+  }
+
+  .achievement-section .group {
+    flex-direction: column;
+  }
+
+  /* SECTION 3: Contact */
+  .contact-section .group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  /* NAVBAR */
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .right a {
+    font-size: 22px;
+  }
+
+  nav .right a:last-child {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+  
+
+  /* SECTION 1: Hero */
+  .hero-section {
+    padding: 0 20px;
+  }
+
+  .hero-section .text h2 {
+    font-size: 30px;
+  }
+
+  /* SECTION 2: Skills */
+  .skills-section {
+    padding: 0 20px;
+  }
+
+  .skills-section .cells .cell span {
+    font-size: 16px;
+  }
+
+  /* SECTION 3: Achievement */
+  .achievement-section {
+    padding: 0 20px;
+  }
+
+  /* SECTION 4: Contact */
+  .contact-section {
+    padding: 0 20px;
+  }
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+
+.socials a {
+  color: white;
+  margin: 0 0.5em;
+  font-size: 1.2em;
+}

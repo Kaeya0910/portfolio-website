@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-    </body>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>My Portfolio</title>
 
   <link rel="stylesheet" href="styles.css">
 
-  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
+<body>
 
 
 
@@ -99,33 +95,41 @@
     </section>
 
     <!-- SECTION 2: Skills -->
-    <section id="skills" class="skills-section">
-      <h2>Skills</h2>
+    <section class="skills" id="skills">
+      <h2 class="heading">Skills</h2>
 
-      <div class="cells">
-        <div class="cell">
-          <i class="fa-brands fa-html5"></i>
-          <span>HTML</span>
-        </div>
-        
-        <div class="cell">
-          <i class="fa-brands fa-css3-alt"></i>
-          <span>CSS</span>
-        </div>
-        
-        <div class="cell">
-          <i class="fa-brands fa-java"></i>
-          <span>Java</span>
+      <div class="skills-container">
+
+        <div class="skill-box">
+          <div class="skill-info">
+            <i class="fa-brands fa-java"></i>
+            <h4>Java</h4>
+            <p>I'm still learning Java, focusing on understanding object-oriented programming concepts and building basic applications to strengthen my logic and problem-solving skills.</p>
+          </div>
         </div>
 
-        <div class="text">
-          "I know that my skills are not yet enough, but I’m doing my best to improve. Right now, I’m still learning Java, and I use IntelliJ as my coding tool. I also study using W3Schools to help me understand coding better. I believe that with more practice and learning, I will become more confident and ready for future opportunities."
+        <div class="skill-box">
+          <div class="skill-info">
+            <i class="fa-brands fa-html5"></i>
+            <h4>HTML</h4>
+            <p>I'm currently learning HTML to structure web pages effectively and understand how content is organized on the internet.</p>
+          </div>
         </div>
+
+        <div class="skill-box">
+          <div class="skill-info">
+            <i class="fa-brands fa-css"></i>
+            <h4>CSS</h4>
+            <p>I'm learning CSS to style web pages and make them visually appealing, experimenting with layout, colors, and responsive design.</p>
+          </div>
+        </div>
+      </div>
+      </div>
       </div>
     </section>
 
     <!-- SECTION 3: Achievement -->
-    <section id="achievement" class="achievement-section">
+    <!-- <section id="achievement" class="achievement-section">
       <h2>Achievement</h2>
 
       <div class="group">
@@ -143,40 +147,141 @@
         
         </div>
       </div>
-    </section>
+    </section> -->
 
-<!-- SECTION 4: Contact -->
-<section id="contact" class="contact-section">
-  <h2>Contact</h2>
-  <div class="group">
-    <div class="text">
-      <p>Have a question? Send us a message and we'll reply soon!</p>
+   <section class="achievement active">
+  <h2 class="heading">Achievements</h2>
+  <div class="achievement-container">
+    
+    <!-- Left: Text Content -->
+    <div class="achievement-box text-box">
+      <div class="achievement-detail active">
+        <p class="numb">01</p>
+        <h3>National Certificate II</h3>
+        <p>
+          for having completed the competency requirements under the Philippine TVET
+          Competency Assessment and Certification System
+        </p>
+      </div>
+
+      <div class="achievement-detail">
+        <p class="numb">02</p>
+        <h3>Certificate of Participation</h3>
+        <p>
+          I participated in my school at STI Alabang called Code Rush Competition 2025
+        </p>
+      </div>
+
+      <div class="achievement-detail">
+        <p class="numb">03</p>
+        <h3>National Certificate II</h3>
+        <p>
+          for having completed the competency requirements under the Philippine TVET
+          Competency Assessment and Certification System
+        </p>
+      </div>
     </div>
 
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" />
+    <div class="achievement-box image-box">
+      <div class="achievement-carousel">
+        <div class="img-slide">
+          <div class="img-item">
+            <img src="NC.jpeg">
+          </div>
+          <div class="img-item">
+            <img src="certif2.jpeg">
+          </div>
+          <div class="img-item">
+            <img src="3.jpeg">
+          </div>
+        </div>
+      </div>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" />
-
-      <label for="message">Message</label>
-      <textarea id="message" rows="6"></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
+      <div class="navigation">
+        <button class="arrow-left disabled"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="arrow-right"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
   </div>
 </section>
 
-  <footer>
+
+
+  <section class="contact" id="contact">
+  <div class="max-width">
+    <h2 class="title">
+      Contact me
+    <span class="subtitle">Get in touch</span>
+    </h2>
+    <div class="contact-content">
+      <!-- Left column -->
+      <div class="column left">
+        <div class="text">Get in Touch</div>
+        <p>Have a question? Send us a message and we'll reply soon!</p>
+        <div class="icons">
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <div class="info">
+              <div class="head">Name</div>
+              <div class="sub-title">James Nono</div>
+            </div>
+          </div>
+          <div class="row">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="info">
+              <div class="head">Address</div>
+              <div class="sub-title">Metro Manila, Philippines</div>
+            </div>
+          </div>
+          <div class="row">
+            <i class="fas fa-envelope"></i>
+            <div class="info">
+              <div class="head">Email</div>
+              <div class="sub-title">jamesjosephnono@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <div class="column right">
+        <div class="text">Message me</div>
+        <form action="#">
+          <div class="fields">
+            <div class="field name">
+              <input type="text" placeholder="Name" required>
+            </div>
+            <div class="field email">
+              <input type="email" placeholder="Email" required>
+            </div>
+          </div>
+          <div class="field">
+            <input type="text" placeholder="Message" required>
+          </div>
+          <div class="field textarea">
+            <textarea cols="30" rows="10" placeholder="Hello!" required></textarea>
+          </div>
+          <div class="button">
+            <button type="submit">Send message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <footer>
+  <div class="footer-container">
     <p>© James Joseph Nono - 2025</p>
     <div class="socials">
-      <a href="#"><i class="https://www.facebook.com/james.riosnavasca"></i></a>
-      <a href="#"><i class="https://www.instagram.com/kaitokid_____/"></i></a>
+      <a href="https://www.facebook.com/james.riosnavasca" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/kaitokid_____/" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="mailto:jamesjosephnono@email.com"><i class="fas fa-envelope"></i></a>
     </div>
-  </footer>
+  </div>
+</footer> -->
 
-  </main>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
