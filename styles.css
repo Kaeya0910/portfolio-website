@@ -190,65 +190,6 @@ hero-section .text .links a:hover {
 }
 
 
-
-/* SECTION 3: Achievement */
-/* .achievement-section {
-  padding: 0 50px;
-  margin-bottom: 100px;
-}
-
-.achievement-section h2 {
-  box-align: center;
-  font-size: 35px;
-}
-
-.achievement-section h2 {
-  font-size: 40px;
-  margin-bottom: 30px;
-}
-
-.achievement-section .group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-}
-
-.achievement-section .group .person-details {
-  text-align: center;
-  flex: 2;
-}
-
-.achievement-section .group .person-details img {
-  width: 200px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-img {
-  clip-path: circle(50%);
-}
-
-.achievement-section .group .person-details p {
-  font-weight: 600;
-}
-
-.achievement-section .group .person-details p:last-child {
-  font-weight: normal;
-}
-
-.achievement-section .group .achieve {
-  flex: 8;
-}
-
-.certificate-img {
-  width: 300px;
-  margin-top: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-} */
-
-
 /* SECTION 3: Achievements */
 .achievement-container {
   display: grid;
@@ -389,39 +330,6 @@ img {
     height: auto;
   }
 }
-
-
-/* .portfolio-box .live-github a {
-  position: relative;
-  display: inline-flex;
-  padding: 1.3rem;
-  font-size: 3rem;
-  color: var(--background-color);
-  border-radius: 50%;
-  background-color: var(--text-color);
-} */
-
-/* .portfolio-box .live-github a:first-child {
-  margin-right: 1.5rem;
-}
-
-.portfolio-box .live-github a:first-child {
-  transform: rotate(135deg);
-}
-
-.portfolio-box .live-github a span {
-  position: absolute;
-  top: -60%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1.6rem;
-  white-space: nowrap;
-  padding: .5rem 1rem;
-  border-radius: .6rem;
-  pointer-events: none;
-  background-color: var(--background-color);
-  color: var(--text-color);
-} */
 
 
 /* SECTION 4: Contact */
