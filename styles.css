@@ -72,7 +72,7 @@ nav .right a span {
   align-items: center;
   padding: 0 50px;
   margin: 50px 0;
-  margin-bottom: 100px;
+  margin-bottom: 220px;
   gap: 40px;
 }
 
@@ -190,7 +190,6 @@ hero-section .text .links a:hover {
 }
 
 
-/* SECTION 3: Achievements */
 .achievement-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
