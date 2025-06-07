@@ -9,12 +9,13 @@
 
   <link rel="stylesheet" href="styles.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="Black White Minimalist Professional Initial Logo.png">
+  <link rel="icon" type="image/png" href="Black White Minimalist Professional Initial Logo.png"> 
+  <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
 </head>
 
 <body>
@@ -22,6 +23,16 @@
 
 
 <body>
+
+<script type="text/javascript" src="email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Avt6oyNMhdYTj1I7M",
+      });
+   })();
+</script>
 
   <div class="container">
     <header></header>
@@ -70,7 +81,7 @@
         </script>
 
         
-        <p>"Hello! My name is James Joseph Nono. I made this website portfolio for my final project exam. It shows what I’ve learned as a student, like my skills in coding and web design. I’m still learning and improving, and this project is a big step for me to achieve my dreams. Thank you for taking the time to visit my website!"</p>
+        <p>Hello! My name is James Joseph Nono. I made this website portfolio for my final project exam. It shows what I’ve learned as a student, like my skills in coding and web design. I’m still learning and improving, and this project is a big step for me to achieve my dreams. Thank you for taking the time to visit my website!</p>
 
         <div class="links">
           <a href="#skills">
@@ -221,40 +232,65 @@
         </div>
       </div>
 
-      <!-- Right column -->
+
       <div class="column right">
         <div class="text">Message me</div>
-        <form action="#">
+        <form>
           <div class="fields">
             <div class="field name">
-              <input type="text" placeholder="Name" required>
+              <input type="text" placeholder="Name"  name ="name" id="name" required>
             </div>
             <div class="field email">
-              <input type="email" placeholder="Email" required>
+              <input type="email" placeholder="Email" name="email" id="email" required>
             </div>
           </div>
           <div class="field">
-            <input type="text" placeholder="Subject" required>
+            <input type="text" placeholder="Subject" name="subject" id="subject" required>
           </div>
           <div class="field textarea">
-            <textarea cols="30" rows="10" placeholder="Message" required></textarea>
+            <textarea cols="30" rows="10" placeholder="Message"  name="message" id="message" required></textarea>
           </div>
           <div class="button">
-            <button type="submit">Send message</button>
+             <button  id="send-email" >Send</button>
           </div>
         </form>
-        <form action="https://formsubmit.co/jamesjosephnono@gmail.com" method="POST">
-          <!-- <input type="hidden" name="_captcha" value="false"> -->
-          <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html"> -->
-          <input type="email@gmail.com"> 
-          <textarea id="message">Message</textarea> 
-          <button type="submit">Send Email</button>
-        </form>
+
       </div>
     </div>
   </div>
 </section>
 </main>
-<script src="script.js"></script> 
+<script src="script.js"></script>
+<script>
+  $("#send-email").click( function(){ 
+  //     alert("Email Sent");
+     let name =  document.getElementById("name").value;
+     let email = document.getElementById("email").value;
+     let subject = document.getElementById("subject").value;
+     let message = document.getElementById("message").value;
+//      var subject = document.getElementById("subject").value;
+//      var message = document.getElementById("message").value;
+//     var email = document.getElementById("email").value;
+//   alert(email);
+//     if(email !="")
+//   {
+//       emailjs.send("service_iadqsut","template_ubf0s7c",{
+//       subject: subject,
+//       name: name,
+//       message: message,
+//       email: email,
+// });  
+//   }
+
+//    alert("Email Sent"); 
+
+emailjs.send("service_iadqsut","template_ubf0s7c",{
+subject: "Email Notification",
+name: "James",
+message: "TestEmail",
+email: "jamesjosephnono@gmail.com",
+});
+});
+</script>
 </body>
-</html> 
+</html>
